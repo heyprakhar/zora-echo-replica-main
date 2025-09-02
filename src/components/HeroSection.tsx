@@ -4,21 +4,31 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* YouTube Background Video */}
-      <div className="absolute inset-0" style={{ right: '1in' }}>
-        <iframe
-          src="https://www.youtube.com/embed/Jw2yJ_EaqPI?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&playsinline=1&disablekb=1&fs=0&playlist=Jw2yJ_EaqPI&vq=hd1080"
-          title="Hero Video"
-          className="absolute inset-0 w-full h-full"
+      {/* YouTube Background Video - Cropped to hide bottom controls */}
+      <div className="absolute inset-0" style={{ overflow: 'hidden' }}>
+        <div 
+          className="absolute inset-0"
           style={{
-            minWidth: '100vw',
-            minHeight: '100vh',
-            objectFit: 'cover',
-            pointerEvents: 'none'
+            bottom: '-2in', // Crop 2 inches from bottom
+            height: 'calc(100% + 2in)' // Extend height to compensate
           }}
-          allow="autoplay; encrypted-media"
-          allowFullScreen={false}
-        />
+        >
+          <iframe
+            src="https://www.youtube.com/embed/Jw2yJ_EaqPI?autoplay=1&loop=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&cc_load_policy=0&playsinline=1&disablekb=1&fs=0&playlist=Jw2yJ_EaqPI&vq=hd1080"
+            title="Hero Video"
+            className="absolute inset-0 w-full h-full"
+            style={{
+              minWidth: '100vw',
+              minHeight: 'calc(100vh + 2in)',
+              transform: 'scale(1.1)', // Slightly scale up to ensure full coverage
+              transformOrigin: 'center center',
+              objectFit: 'cover',
+              pointerEvents: 'none'
+            }}
+            allow="autoplay; encrypted-media"
+            allowFullScreen={false}
+          />
+        </div>
       </div>
 
       {/* Content with fade-in animation */}
