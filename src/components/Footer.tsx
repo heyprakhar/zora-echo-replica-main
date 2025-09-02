@@ -19,10 +19,10 @@ const Footer = () => {
             </div>
             <p className="text-luxury-text-muted font-light leading-relaxed max-w-sm">
               A masterpiece reserved for the distinguished. Experience luxury
-              events at Delhi's premier convention center.
+              events at Noida's premier convention center.
             </p>
             <div className="text-luxury-text-muted text-xs">
-              <div>DELHI CONVENTION CENTER</div>
+              <div></div>
               <div className="text-luxury-gold">
                 LUXURY • ELEGANCE • EXCLUSIVITY
               </div>
@@ -94,8 +94,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-luxury-gold/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-luxury-text-muted text-sm font-light">
-            © {new Date(Date.now()).getFullYear()} The Opera House Convention
-            Center. All rights reserved.
+            © {new Date(Date.now()).getFullYear()} The Opera House
+            . All rights reserved.
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a

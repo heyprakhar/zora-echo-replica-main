@@ -129,7 +129,7 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <label className="block text-luxury-text font-light mb-2">
                     Email Address
                   </label>
@@ -138,7 +138,7 @@ const ContactSection = () => {
                     className="bg-luxury-dark-lighter border-luxury-gold/30 text-luxury-text focus:border-luxury-gold"
                     placeholder="your.email@example.com"
                   />
-                </div>
+                </div> */}
 
                 <div>
                   <label className="block text-luxury-text font-light mb-2">
@@ -170,7 +170,7 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <div>
+                {/* <div>
                   <label className="block text-luxury-text font-light mb-2">
                     Additional Details
                   </label>
@@ -178,7 +178,7 @@ const ContactSection = () => {
                     className="bg-luxury-dark-lighter border-luxury-gold/30 text-luxury-text focus:border-luxury-gold min-h-[100px]"
                     placeholder="Tell us about your vision for this event..."
                   />
-                </div>
+                </div> */}
 
                 <Button
                   type="submit"

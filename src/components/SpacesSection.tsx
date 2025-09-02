@@ -7,26 +7,26 @@ import { motion } from "framer-motion";
 const SpacesSection = () => {
   const spaces = [
     {
-      title: "The Ballroom",
+      title: "Glasshouse",
       description: "A magnificent predesigned space spanning 45,000 sq.ft. with a capacity of 1,000-1,500 guests.",
       image: "https://i.ibb.co/60ZbpKgD/SP-0388.jpg",
       capacity: "1,000-1,500",
       area: "45,000 sq.ft."
     },
     {
-      title: "Open Hall",
+      title: "Ballroom",
       description: "A predesigned hall spanning across 14,000 sq.ft. is perfect for intimate gatherings, with 350-500 guests.",
       image: "https://i.ibb.co/1YvPzBbW/SP-2684.jpg",
       capacity: "350-500",
       area: "14,000 sq.ft."
     },
-    // {
-    //   title: "Open Canvas",
-    //   description: "A sprawling fully customizable outdoor area for up to 3,000 guests.",
-    //   image: openCanvas,
-    //   capacity: "Up to 3,000",
-    //   area: "Outdoor"
-    // }
+    {
+      title: "Open Lawn",
+      description: "A sprawling fully customizable outdoor area for up to 150 guests.",
+      image: openCanvas,
+      capacity: "150",
+      area: "Outdoor"
+     },
   ];
 
   return (
