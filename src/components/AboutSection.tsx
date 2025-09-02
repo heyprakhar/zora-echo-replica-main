@@ -22,7 +22,7 @@ const AboutSection = () => {
           
           <p className="text-luxury-text text-lg md:text-xl max-w-4xl mx-auto leading-relaxed font-light mb-12">
             Experience a setting crafted for timeless and luxurious celebrations. The Opera House is an icon of luxury,
-            sophistication, elegance, and exclusivity. Spanning over 2 lakh sq.ft., The Opera House sets a new
+            sophistication, elegance, and exclusivity. Spanning over 25000 sq.ft., The Opera House sets a new
             benchmark for bespoke events, intimate celebrations, and gatherings, offering an unparalleled fusion
             of grandeur, elegance, and opulence.
           </p>
@@ -39,11 +39,11 @@ const AboutSection = () => {
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-serif font-light text-luxury-gold mb-4">2+</div>
-            <p className="text-luxury-text-muted font-light tracking-wide">Lakh Sq.Ft.</p>
+            <div className="text-4xl md:text-5xl font-serif font-light text-luxury-gold mb-4">25000</div>
+            <p className="text-luxury-text-muted font-light tracking-wide">Sq.Ft.</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl font-serif font-light text-luxury-gold mb-4">3000+</div>
+            <div className="text-4xl md:text-5xl font-serif font-light text-luxury-gold mb-4">700+</div>
             <p className="text-luxury-text-muted font-light tracking-wide">Guest Capacity</p>
           </div>
           <div className="text-center">
