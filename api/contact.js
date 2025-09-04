@@ -128,6 +128,12 @@ export default async function handler(req, res) {
     }
 
     console.log('📧 Received contact form submission:', req.body);
+    console.log('🔧 Environment variables check:', {
+      EMAIL_USER: process.env.EMAIL_USER ? '✅ Set' : '❌ Missing',
+      EMAIL_PASS: process.env.EMAIL_PASS ? '✅ Set' : '❌ Missing',
+      EMAIL_FROM: process.env.EMAIL_FROM ? '✅ Set' : '❌ Missing',
+      EMAIL_TO: process.env.EMAIL_TO ? '✅ Set' : '❌ Missing'
+    });
     
     const { fullName, phone, eventType, eventDate, guestCount, additionalDetails } = req.body;
     
@@ -162,16 +168,32 @@ export default async function handler(req, res) {
       console.error('❌ Missing email environment variables');
       return res.status(500).json({
         success: false,
-        message: 'Email service configuration error'
+        message: 'Email service configuration error. Please check environment variables.',
+        missingVars: {
+          EMAIL_USER: !process.env.EMAIL_USER,
+          EMAIL_PASS: !process.env.EMAIL_PASS,
+          EMAIL_TO: !process.env.EMAIL_TO
+        }
       });
     }
 
     // Send email
+    console.log('🔧 Creating email transporter...');
     const transporter = createTransporter();
     
-    // Verify transporter configuration
-    await transporter.verify();
-    console.log('✅ Email transporter ready');
+    try {
+      // Verify transporter configuration
+      console.log('🔧 Verifying email transporter...');
+      await transporter.verify();
+      console.log('✅ Email transporter ready');
+    } catch (verifyError) {
+      console.error('❌ Email transporter verification failed:', verifyError);
+      return res.status(500).json({
+        success: false,
+        message: 'Email service authentication failed. Please check email credentials.',
+        error: verifyError.message
+      });
+    }
     
     const emailOptions = createEmailTemplate({
       fullName: fullName.trim(),
@@ -182,11 +204,12 @@ export default async function handler(req, res) {
       additionalDetails: additionalDetails ? additionalDetails.trim() : ''
     });
 
+    console.log('📤 Sending email...');
     const result = await transporter.sendMail(emailOptions);
     
     console.log('✅ Email sent successfully:', result.messageId);
     
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       message: 'Your inquiry has been sent successfully! We will contact you soon.',
       messageId: result.messageId
@@ -194,10 +217,24 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('❌ Server error:', error);
+    console.error('❌ Error stack:', error.stack);
+    
+    // Provide more specific error messages
+    let errorMessage = 'Failed to send email. Please try again or contact us directly.';
+    if (error.code === 'EAUTH') {
+      errorMessage = 'Email authentication failed. Invalid credentials.';
+    } else if (error.code === 'ENOTFOUND') {
+      errorMessage = 'Email server not found. Network connectivity issue.';
+    } else if (error.code === 'ECONNECTION') {
+      errorMessage = 'Cannot connect to email server.';
+    }
+    
     return res.status(500).json({
       success: false,
-      message: 'Failed to send email. Please try again or contact us directly.',
-      error: error.message
+      message: errorMessage,
+      error: error.message,
+      code: error.code,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
