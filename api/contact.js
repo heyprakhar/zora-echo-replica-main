@@ -103,30 +103,30 @@ const createTransporter = () => {
 };
 
 export default async function handler(req, res) {
-  // Enable CORS
-  res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
-  );
-
-  // Handle preflight request
-  if (req.method === 'OPTIONS') {
-    res.status(200).end();
-    return;
-  }
-
-  // Only allow POST requests
-  if (req.method !== 'POST') {
-    return res.status(405).json({
-      success: false,
-      message: 'Method not allowed'
-    });
-  }
-
   try {
+    // Enable CORS for all origins
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
+    console.log('🚀 API Request:', { method: req.method, url: req.url });
+
+    // Handle preflight request
+    if (req.method === 'OPTIONS') {
+      console.log('✅ Handling OPTIONS request');
+      return res.status(200).end();
+    }
+
+    // Only allow POST requests
+    if (req.method !== 'POST') {
+      console.log('❌ Method not allowed:', req.method);
+      return res.status(405).json({
+        success: false,
+        message: `Method ${req.method} not allowed. Use POST.`
+      });
+    }
+
     console.log('📧 Received contact form submission:', req.body);
     
     const { fullName, phone, eventType, eventDate, guestCount, additionalDetails } = req.body;
@@ -194,7 +194,7 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('❌ Server error:', error);
-    res.status(500).json({
+    return res.status(500).json({
       success: false,
       message: 'Failed to send email. Please try again or contact us directly.',
       error: error.message

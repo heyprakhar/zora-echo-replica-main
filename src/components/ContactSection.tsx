@@ -40,6 +40,9 @@ const ContactSection = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
     
+    console.log('📤 Submitting form to:', API_ENDPOINTS.contact);
+    console.log('📋 Form data:', data);
+    
     try {
       const response = await fetch(API_ENDPOINTS.contact, {
         method: 'POST',
@@ -49,7 +52,15 @@ const ContactSection = () => {
         body: JSON.stringify(data)
       });
       
+      console.log('📡 Response status:', response.status);
+      console.log('📡 Response headers:', Object.fromEntries(response.headers.entries()));
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+      
       const result = await response.json();
+      console.log('📥 Response data:', result);
       
       if (result.success) {
         setSubmitStatus('success');
@@ -60,9 +71,17 @@ const ContactSection = () => {
         setSubmitMessage(result.message || 'Failed to send inquiry. Please try again.');
       }
     } catch (error) {
+      console.error('❌ Contact form error:', error);
       setSubmitStatus('error');
-      setSubmitMessage('Network error. Please check your connection and try again.');
-      console.error('Contact form error:', error);
+      
+      // More specific error messages
+      if (error instanceof TypeError && error.message.includes('fetch')) {
+        setSubmitMessage('Network error: Unable to connect to server. Please check your internet connection.');
+      } else if (error instanceof Error) {
+        setSubmitMessage(`Request failed: ${error.message}`);
+      } else {
+        setSubmitMessage('An unexpected error occurred. Please try again later.');
+      }
     } finally {
       setIsSubmitting(false);
     }

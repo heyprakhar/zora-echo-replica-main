@@ -36,11 +36,9 @@
       ]
     }
   ],
-  "env": {
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASS": "@email_pass", 
-    "EMAIL_FROM": "@email_from",
-    "EMAIL_TO": "@email_to",
-    "NODE_ENV": "production"
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
 }
