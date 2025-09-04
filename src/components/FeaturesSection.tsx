@@ -8,33 +8,38 @@ const FeaturesSection = () => {
     {
       icon: Lightbulb,
       title: "Unrivaled Location",
-      description: "Seamlessly connected to Delhi's most iconic landmarks."
+      description: "Seamlessly connected to Noida's most iconic landmarks.",
     },
     {
       icon: Gem,
-      title: "Visionary Design", 
-      description: "Masterfully designed by an internationally acclaimed architectural designer, drawing inspiration from nature's elegance."
+      title: "Photo-Ready Spots",
+      description:
+        "Curated backdrops and lighting perfect for wedding photography and reels.",
     },
     {
       icon: Calendar,
       title: "Event Spaces",
-      description: "Meticulously designed exquisite venues perfect for grand to intimate weddings."
+      description:
+        "Meticulously designed exquisite venues perfect for grand to intimate weddings.",
     },
     {
       icon: ChefHat,
       title: "Dining Elevated",
-      description: "A dedicated, large dining area complements the Grand Ballroom."
+      description:
+        "A dedicated, large dining area complements the Grand Ballroom.",
     },
     {
       icon: Car,
-      title: "Spacious Parking", 
-      description: "Unmatched parking space with a capacity of over 2,000 vehicles."
+      title: "Spacious Parking",
+      description:
+        "Unmatched parking space with a capacity of over 400-500 vehicles.",
     },
     {
       icon: Sun,
       title: "Mood Lighting",
-      description: "State-of-the-art lighting with 700 intelligent mood lights with 20 modes."
-    }
+      description:
+        "State-of-the-art lighting with 700 intelligent mood lights with 20 modes.",
+    },
   ];
 
   return (

@@ -14,7 +14,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-luxury-dark">
+    <section id="gallery" className="py-6 bg-luxury-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 40 }}

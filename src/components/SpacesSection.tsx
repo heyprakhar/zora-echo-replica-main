@@ -30,7 +30,7 @@ const SpacesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-luxury-dark">
+    <section id="features" className="py-6 bg-luxury-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -87,17 +87,6 @@ const SpacesSection = () => {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="text-center">
-            <a href="#contact">
-              <Button 
-                size="lg"
-                className="bg-luxury-gold hover:bg-luxury-gold-light text-luxury-dark font-medium px-8 py-4 text-lg tracking-wide shadow-luxury transition-all duration-300 hover:scale-105"
-              >
-                Book Your Event
-              </Button>
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>
