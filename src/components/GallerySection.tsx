@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const GallerySection = () => {
   const galleryImages = [
-    { src: "https://xyxkyeoohmpdcuepicnf.supabase.co/storage/v1/object/public/hero//theopera3.JPG", alt: "Luxury Interior Architecture", span: "col-span-2 row-span-2" },
+    { src: "https://i.ibb.co/cKMB68yf/SP-2667-optimized-200.jpg", alt: "Luxury Interior Architecture", span: "col-span-2 row-span-2" },
     { src: "https://xyxkyeoohmpdcuepicnf.supabase.co/storage/v1/object/public/hero//theopera1.JPG", alt: "The Opera House Event 1", span: "col-span-1 row-span-1" },
     { src: "https://xyxkyeoohmpdcuepicnf.supabase.co/storage/v1/object/public/hero//theopera2.JPG", alt: "The Opera House Event 2", span: "col-span-1 row-span-1" },
     { src: "https://i.ibb.co/8g1Qnbtt/theopera4.jpg", alt: "The Opera House Event 3", span: "col-span-1 row-span-1" },
