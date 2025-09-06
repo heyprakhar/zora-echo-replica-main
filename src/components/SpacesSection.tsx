@@ -8,25 +8,28 @@ const SpacesSection = () => {
   const spaces = [
     {
       title: "Glasshouse",
-      description: "A magnificent predesigned space spanning 45,000 sq.ft. with a capacity of 1,000-1,500 guests.",
+      description:
+        "A magnificent predesigned space spanning 45,000 sq.ft. with a capacity of 1,000-1,500 guests.",
       image: "https://i.ibb.co/60ZbpKgD/SP-0388.jpg",
       capacity: "1,000-1,500",
-      area: "45,000 sq.ft."
+      area: "3,500 sq.ft.",
     },
     {
       title: "Ballroom",
-      description: "A predesigned hall spanning across 14,000 sq.ft. is perfect for intimate gatherings, with 350-500 guests.",
+      description:
+        "A predesigned hall spanning across 14,000 sq.ft. is perfect for intimate gatherings, with 350-500 guests.",
       image: "https://i.ibb.co/1YvPzBbW/SP-2684.jpg",
       capacity: "350-500",
-      area: "14,000 sq.ft."
+      area: "15,000 sq.ft.",
     },
     {
       title: "Open Lawn",
-      description: "A sprawling fully customizable outdoor area for up to 150 guests.",
+      description:
+        "A sprawling fully customizable outdoor area for up to 150 guests.",
       image: openCanvas,
       capacity: "150",
-      area: "Outdoor"
-     },
+      area: "7,500 sq.ft.",
+    },
   ];
 
   return (
