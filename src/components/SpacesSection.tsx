@@ -26,7 +26,7 @@ const SpacesSection = () => {
       title: "Open Lawn",
       description:
         "A sprawling fully customizable outdoor area for up to 150 guests.",
-      image: openCanvas,
+      image: "https://i.ibb.co/Xrx4Rq8v/SP-2671-optimized-200.jpg",
       capacity: "150-200",
       area: "7,500 sq.ft.",
     },
