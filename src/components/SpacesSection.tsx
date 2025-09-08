@@ -9,9 +9,9 @@ const SpacesSection = () => {
     {
       title: "Glasshouse",
       description:
-        "A magnificent predesigned space spanning 45,000 sq.ft. with a capacity of 1,000-1,500 guests.",
+        "A magnificent predesigned space spanning 45,000 sq.ft. with a capacity of 150 guests.",
       image: "https://i.ibb.co/60ZbpKgD/SP-0388.jpg",
-      capacity: "1,000-1,500",
+      capacity: "150",
       area: "3,500 sq.ft.",
     },
     {
