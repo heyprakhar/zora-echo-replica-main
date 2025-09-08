@@ -11,7 +11,7 @@ const SpacesSection = () => {
       description:
         "A magnificent predesigned space spanning 3,500 sq.ft. with a capacity of 150 guests.",
       image: "https://i.ibb.co/60ZbpKgD/SP-0388.jpg",
-      capacity: "150",
+      capacity: "80-120",
       area: "3,500 sq.ft.",
     },
     {
@@ -19,7 +19,7 @@ const SpacesSection = () => {
       description:
         "A predesigned hall spanning across 14,000 sq.ft. is perfect for intimate gatherings, with 350-500 guests.",
       image: "https://i.ibb.co/1YvPzBbW/SP-2684.jpg",
-      capacity: "350-500",
+      capacity: "250-350",
       area: "15,000 sq.ft.",
     },
     {
@@ -27,7 +27,7 @@ const SpacesSection = () => {
       description:
         "A sprawling fully customizable outdoor area for up to 150 guests.",
       image: openCanvas,
-      capacity: "150",
+      capacity: "150-200",
       area: "7,500 sq.ft.",
     },
   ];
