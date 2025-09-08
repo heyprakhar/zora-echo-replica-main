@@ -34,12 +34,12 @@ const FeaturesSection = () => {
       description:
         "Unmatched parking space with a capacity of over 400-500 vehicles.",
     },
-    {
-      icon: Sun,
-      title: "Mood Lighting",
-      description:
-        "State-of-the-art lighting with 700 intelligent mood lights with 20 modes.",
-    },
+    // {
+    //   icon: Sun,
+    //   title: "Mood Lighting",
+    //   description:
+    //     "State-of-the-art lighting with 700 intelligent mood lights with 20 modes.",
+    // },
   ];
 
   return (

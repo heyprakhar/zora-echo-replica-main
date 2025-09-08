@@ -173,7 +173,7 @@ const ContactSection = () => {
                       Operating Hours
                     </h4>
                     <p className="text-luxury-text font-light">
-                      Monday - Sunday: 9:00 AM - 11:00 PM
+                      Monday - Sunday: 10:00 AM - 10:00 PM
                       <br />
                       Event Planning: By Appointment
                     </p>
