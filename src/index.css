@@ -200,4 +200,57 @@ All colors MUST be HSL for proper theming.
     backdrop-filter: blur(10px);
     border: 1px solid hsl(var(--luxury-gold) / 0.2);
   }
+
+  /* Accessibility and Focus Management */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Enhanced focus indicators */
+  *:focus {
+    outline: 2px solid hsl(var(--luxury-gold));
+    outline-offset: 2px;
+  }
+
+  /* Skip links */
+  .focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  /* High contrast focus for better accessibility */
+  button:focus,
+  a:focus,
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 3px solid hsl(var(--luxury-gold));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px hsl(var(--luxury-gold) / 0.3);
+  }
+
+  /* Prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }

@@ -55,16 +55,16 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light mb-4 text-white drop-shadow-2xl" style={{
             textShadow: '0 0 40px rgba(212, 175, 55, 0.8), 0 0 80px rgba(212, 175, 55, 0.4), 2px 2px 4px rgba(0,0,0,0.8)'
           }}>
-            An Exclusive Masterpiece
+            Best Luxury Banquet Hall
           </h1>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-light tracking-[0.3em] uppercase text-luxury-gold" style={{
             textShadow: '0 0 30px rgba(212, 175, 55, 0.6), 2px 2px 4px rgba(0,0,0,0.8)'
           }}>
-            For the Refined Few
+            in Noida
           </h2>
         </motion.div>
         
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -73,9 +73,9 @@ const HeroSection = () => {
             textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)'
           }}
         >
-          Experience the pinnacle of sophistication at The Opera House,
+          Experience luxury wedding venue & banquet hall in Noida with 500+ capacity,
           <br className="hidden md:block" />
-          where timeless elegance meets contemporary luxury.
+          premium amenities, and world-class service for your special occasions.
         </motion.p>
 
         <motion.div
