@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
 import { sendContactEmail } from './config/emailConfig.js';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -12,6 +13,53 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3001;
 const isProduction = process.env.NODE_ENV === 'production';
+
+// Security Headers with Helmet
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: [
+        "'self'",
+        "'unsafe-inline'", // For React and Vite in development
+        "https://www.googletagmanager.com",
+        "https://www.google-analytics.com"
+      ],
+      styleSrc: [
+        "'self'",
+        "'unsafe-inline'", // For CSS-in-JS and Tailwind
+        "https://fonts.googleapis.com"
+      ],
+      fontSrc: [
+        "'self'",
+        "https://fonts.gstatic.com"
+      ],
+      imgSrc: [
+        "'self'",
+        "data:",
+        "https:",
+        "blob:"
+      ],
+      connectSrc: [
+        "'self'",
+        "https://www.google-analytics.com"
+      ],
+      frameSrc: ["'none'"],
+      objectSrc: ["'none'"],
+      manifestSrc: ["'self'"],
+      workerSrc: ["'self'"]
+    }
+  },
+  hsts: {
+    maxAge: 31536000,
+    includeSubDomains: true,
+    preload: true
+  },
+  frameguard: { action: 'deny' },
+  noSniff: true,
+  xssFilter: true,
+  referrerPolicy: { policy: 'strict-origin-when-cross-origin' }
+}));
 
 // Middleware
 if (isProduction) {

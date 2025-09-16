@@ -12,11 +12,10 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="text-3xl font-serif bg-gradient-to-r from-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent">
-                  THE OPERA
+                <div className="text-3xl font-serif font-bold text-luxury-gold-dark drop-shadow-sm">
+                  THE OPERA HOUSE
                 </div>
-                <div className="text-sm tracking-[0.4em] text-luxury-gold-dark font-light uppercase">House</div>
-                <div className="absolute -bottom-2 left-0 w-20 h-[1px] bg-gradient-to-r from-luxury-gold to-transparent"></div>
+                <div className="absolute -bottom-2 left-0 w-32 h-[1px] bg-gradient-to-r from-luxury-gold to-transparent"></div>
               </div>
             </div>
             <p className="text-luxury-text font-light leading-relaxed max-w-sm tracking-wide">
@@ -54,6 +53,24 @@ const Footer = () => {
                 className="block text-luxury-text hover:text-luxury-gold transition-all duration-300 font-light hover:pl-2 tracking-wide"
               >
                 Gallery
+              </a>
+              <a
+                href="/wedding-venue-noida"
+                className="block text-luxury-text hover:text-luxury-gold transition-all duration-300 font-light hover:pl-2 tracking-wide"
+              >
+                Wedding Venue
+              </a>
+              <a
+                href="/luxury-banquet-hall-noida"
+                className="block text-luxury-text hover:text-luxury-gold transition-all duration-300 font-light hover:pl-2 tracking-wide"
+              >
+                Luxury Banquet Hall
+              </a>
+              <a
+                href="/banquet-hall-near-me"
+                className="block text-luxury-text hover:text-luxury-gold transition-all duration-300 font-light hover:pl-2 tracking-wide"
+              >
+                Banquet Hall Near Me
               </a>
               <a
                 href="#contact"
@@ -99,13 +116,13 @@ const Footer = () => {
             Find Us
           </h3>
           <div className="w-full overflow-hidden rounded-lg shadow-lg border border-luxury-gold/20">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7481390.63416101!2d70.6541092015946!3d23.710880873380276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef1a069c7d21%3A0x2d8f8acad99fb1d!2sTHE%20OPERA%20HOUSE!5e0!3m2!1sen!2sin!4v1757320677370!5m2!1sen!2sin" 
-              width="100%" 
-              height="450" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.6555445065326!2d77.39245768529053!3d28.558851382434865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef1a069c7d21%3A0x2d8f8acad99fb1d!2sTHE%20OPERA%20HOUSE%2C%20Bhule%20ram%20Palace%2C%20near%20Prateek%20Laurel%2C%20Sarfabad%20Village%2C%20Sarfabad%2C%20Sector%2073%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1736973161370!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full"
             />
