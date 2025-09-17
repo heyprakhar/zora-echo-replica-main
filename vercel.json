@@ -17,7 +17,6 @@
       "destination": "/index.html"
     }
   ],
-  "errorPage": "/index.html",
   "headers": [
     {
       "source": "/api/(.*)",
