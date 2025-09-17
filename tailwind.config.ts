@@ -67,6 +67,11 @@ export default {
 					light: 'hsl(var(--luxury-light))',
 					cream: 'hsl(var(--luxury-cream))',
 					'dark-text': 'hsl(var(--luxury-dark-text))',
+					blue: 'hsl(var(--luxury-blue))',
+					'blue-light': 'hsl(var(--luxury-blue-light))',
+					'blue-dark': 'hsl(var(--luxury-blue-dark))',
+					'blue-pale': 'hsl(var(--luxury-blue-pale))',
+					'blue-accent': 'hsl(var(--luxury-blue-accent))',
 				}
 			},
 			borderRadius: {

@@ -29,7 +29,7 @@ const BanquetHallNearMe = () => {
           "name": "The Opera House - Best Banquet Hall Near You",
           "description": "Conveniently located banquet hall in Noida with easy access from Delhi NCR. Perfect venue for all your events.",
           "url": "https://theoperahouse.com/banquet-hall-near-me",
-          "telephone": "+91-9999999999",
+          "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sector 63, H1A/25",

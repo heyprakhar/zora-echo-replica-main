@@ -29,7 +29,7 @@ const LuxuryBanquetHallNoida = () => {
           "name": "The Opera House - Luxury Banquet Hall in Noida",
           "description": "Premier luxury banquet hall in Noida offering world-class amenities and exceptional service for high-end events",
           "url": "https://theoperahouse.com/luxury-banquet-hall-noida",
-          "telephone": "+91-9999999999",
+          "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sector 63, H1A/25",

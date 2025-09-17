@@ -51,10 +51,19 @@ All colors MUST be HSL for proper theming.
     --luxury-champagne: 43 65% 85%;
     --luxury-pearl: 60 8% 95%;
 
+    /* Luxury blue theme colors */
+    --luxury-blue: 231 76% 28%;
+    --luxury-blue-light: 231 76% 48%;
+    --luxury-blue-dark: 231 76% 18%;
+    --luxury-blue-pale: 231 30% 85%;
+    --luxury-blue-accent: 231 65% 60%;
+
     /* Gradients */
     --gradient-luxury: linear-gradient(135deg, hsl(var(--luxury-gold)), hsl(var(--luxury-gold-light)));
     --gradient-white: linear-gradient(180deg, hsl(var(--luxury-white)), hsl(var(--luxury-white-soft)));
     --gradient-radial-gold: radial-gradient(circle at center, hsl(var(--luxury-gold-light)), hsl(var(--luxury-gold)));
+    --gradient-luxury-blue: linear-gradient(135deg, hsl(var(--luxury-blue)), hsl(var(--luxury-blue-light)));
+    --gradient-radial-blue: radial-gradient(circle at center, hsl(var(--luxury-blue-light)), hsl(var(--luxury-blue)));
 
     /* Shadows */
     --shadow-luxury: 0 25px 50px -12px hsl(var(--luxury-gold) / 0.15);
@@ -163,6 +172,39 @@ All colors MUST be HSL for proper theming.
 
   .text-luxury-gold {
     color: hsl(var(--luxury-gold));
+  }
+
+  /* Blue accents */
+  .border-luxury-blue {
+    border-color: hsl(var(--luxury-blue));
+  }
+
+  .text-luxury-blue {
+    color: hsl(var(--luxury-blue));
+  }
+
+  .text-luxury-blue-light {
+    color: hsl(var(--luxury-blue-light));
+  }
+
+  .bg-luxury-blue {
+    background-color: hsl(var(--luxury-blue));
+  }
+
+  .bg-luxury-blue-gradient {
+    background: var(--gradient-luxury-blue);
+  }
+
+  /* Blue luxury button styles */
+  .btn-luxury-blue {
+    @apply relative overflow-hidden transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--luxury-blue)), hsl(var(--luxury-blue-light)));
+    box-shadow: 0 4px 15px hsl(var(--luxury-blue) / 0.3);
+  }
+
+  .btn-luxury-blue:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px hsl(var(--luxury-blue) / 0.4);
   }
 
   /* Elegant animations */

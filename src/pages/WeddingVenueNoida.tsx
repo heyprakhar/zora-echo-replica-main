@@ -29,7 +29,7 @@ const WeddingVenueNoida = () => {
           "name": "The Opera House - Premium Wedding Venue in Noida",
           "description": "Luxury wedding venue in Noida with marriage hall for 500+ guests, complete wedding services and premium amenities",
           "url": "https://theoperahouse.com/wedding-venue-noida",
-          "telephone": "+91-9999999999",
+          "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sector 63, H1A/25",
