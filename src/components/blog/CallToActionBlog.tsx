@@ -15,7 +15,7 @@ const CallToActionBlog: React.FC<CallToActionBlogProps> = ({
   title = "Ready to Plan Your Luxury Event?",
   description = "Experience the difference that true luxury makes at The Opera House. Our dedicated team is ready to create your perfect celebration.",
   phone = "+91 9911620620",
-  address = "Sector 120, Noida",
+  address = "The Opera House Banquet, Near Prateek Laurel, Sector-73, Noida-201307",
   className = ''
 }) => {
   return (

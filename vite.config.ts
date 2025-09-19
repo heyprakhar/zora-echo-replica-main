@@ -14,59 +14,35 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: (id) => {
-          // Separate UI components into their own chunk
-          if (id.includes('components/ui/')) {
-            return 'vendor-ui-components';
-          }
-          // Separate pages into their own chunk
+          // Each page gets its own chunk for proper lazy loading
           if (id.includes('src/pages/')) {
-            return 'pages';
+            const pageName = id.split('/').pop()?.replace('.tsx', '');
+            return `page-${pageName}`;
           }
-          // Handle node_modules manually
+
+          // Vendor chunks
           if (id.includes('node_modules')) {
-            // Large UI libraries in separate chunks
-            if (id.includes('@radix-ui')) {
-              return 'vendor-radix';
-            }
-            if (id.includes('lucide-react')) {
-              return 'vendor-icons';
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'vendor-react';
             }
             if (id.includes('framer-motion')) {
               return 'vendor-motion';
             }
-            if (id.includes('@tanstack')) {
-              return 'vendor-query';
-            }
-            if (id.includes('react-router')) {
-              return 'vendor-router';
-            }
             if (id.includes('@sentry')) {
               return 'vendor-sentry';
             }
-            // Group smaller libraries together
-            if (id.includes('clsx') || id.includes('tailwind') || id.includes('date-fns')) {
-              return 'vendor-utils';
+            if (id.includes('@radix-ui') || id.includes('lucide-react')) {
+              return 'vendor-ui';
             }
-            // React ecosystem
-            if (id.includes('react') || id.includes('scheduler')) {
-              return 'vendor-react';
-            }
+            return 'vendor-libs';
           }
-        },
-        // Optimize chunk naming
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]'
+        }
       }
     },
     chunkSizeWarningLimit: 1000,
-    // Enable source maps for debugging
-    sourcemap: false,
   },
-  // Configure server to avoid CORS issues
   server: {
-    port: 8080, // Changed from default 5173 to 8080 as user requested
-    strictPort: false,
+    port: 5173,
     host: true,
   }
 });

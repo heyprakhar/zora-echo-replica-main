@@ -18,8 +18,8 @@ All colors MUST be HSL for proper theming.
     --popover: 0 0% 100%;
     --popover-foreground: 43 25% 25%;
 
-    /* Luxury gold primary */
-    --primary: 43 100% 52%;
+    /* Luxury blue primary - #112180 */
+    --primary: 231 76% 28%;
     --primary-foreground: 0 0% 100%;
 
     /* Elegant white secondary tones */
@@ -29,15 +29,15 @@ All colors MUST be HSL for proper theming.
     --muted: 0 0% 94%;
     --muted-foreground: 43 15% 45%;
 
-    --accent: 43 95% 60%;
+    --accent: 231 65% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 43 20% 88%;
+    --border: 231 20% 88%;
     --input: 0 0% 95%;
-    --ring: 43 100% 52%;
+    --ring: 231 76% 28%;
 
     /* Custom luxury properties */
     --luxury-gold: 43 100% 52%;
@@ -46,12 +46,12 @@ All colors MUST be HSL for proper theming.
     --luxury-white: 0 0% 100%;
     --luxury-white-soft: 60 77% 94%;
     --luxury-ivory: 60 23% 96%;
-    --luxury-text: 43 25% 25%;
-    --luxury-text-muted: 43 15% 45%;
+    --luxury-text: 231 25% 15%;
+    --luxury-text-muted: 231 15% 45%;
     --luxury-champagne: 43 65% 85%;
     --luxury-pearl: 60 8% 95%;
 
-    /* Luxury blue theme colors */
+    /* Luxury blue theme colors - Primary: #112180 */
     --luxury-blue: 231 76% 28%;
     --luxury-blue-light: 231 76% 48%;
     --luxury-blue-dark: 231 76% 18%;
@@ -258,7 +258,7 @@ All colors MUST be HSL for proper theming.
 
   /* Enhanced focus indicators */
   *:focus {
-    outline: 2px solid hsl(var(--luxury-gold));
+    outline: 2px solid hsl(var(--luxury-blue));
     outline-offset: 2px;
   }
 
@@ -280,9 +280,9 @@ All colors MUST be HSL for proper theming.
   input:focus,
   textarea:focus,
   select:focus {
-    outline: 3px solid hsl(var(--luxury-gold));
+    outline: 3px solid hsl(var(--luxury-blue));
     outline-offset: 2px;
-    box-shadow: 0 0 0 5px hsl(var(--luxury-gold) / 0.3);
+    box-shadow: 0 0 0 5px hsl(var(--luxury-blue) / 0.3);
   }
 
   /* Prefers reduced motion */

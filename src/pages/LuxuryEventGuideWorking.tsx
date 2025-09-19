@@ -7,6 +7,7 @@ import HighlightBox from '@/components/blog/HighlightBox';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { Link } from 'react-router-dom';
 
 const LuxuryEventGuideWorking = () => {
   const tableOfContentsItems = [
@@ -212,7 +213,7 @@ const LuxuryEventGuideWorking = () => {
 
         <BlogSection id="opera-house-excellence" title="The Opera House Excellence">
           <p className="text-lg leading-relaxed mb-6">
-            Located in prestigious Sector 120, The Opera House represents the pinnacle of luxury event venues in the National Capital Region, combining architectural grandeur with modern amenities.
+            Located in prestigious Sector 73, The Opera House represents the pinnacle of luxury event venues in the National Capital Region, combining architectural grandeur with modern amenities.
           </p>
 
           <HighlightBox icon="🏛️" title="Architectural Marvel">
@@ -224,10 +225,10 @@ const LuxuryEventGuideWorking = () => {
           <h3 className="text-xl font-semibold text-luxury-blue mt-6 mb-4">Signature Venue Spaces</h3>
 
           <div className="space-y-6">
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3">🎪 Grand Ballroom</h4>
-                <p className="mb-3">Our flagship space featuring 15,000 square feet of unobstructed elegance with 30-foot soaring ceilings and magnificent crystal chandeliers.</p>
+                <p className="mb-3">Our flagship space featuring 15,000 square feet of unobstructed elegance with 30-foot soaring ceilings and magnificent crystal chandeliers. <Link to="/grand-ballroom" className="text-luxury-blue hover:text-luxury-gold underline font-medium">Explore our Grand Ballroom in detail</Link>.</p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <strong>Capacity:</strong> Up to 2000 guests
@@ -245,7 +246,7 @@ const LuxuryEventGuideWorking = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3">🎭 Intimate Theatre</h4>
                 <p className="mb-3">A 200-seat performance space with professional acoustics, perfect for cultural performances and intimate ceremonies.</p>
@@ -266,10 +267,10 @@ const LuxuryEventGuideWorking = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3">🌿 Garden Pavilion</h4>
-                <p className="mb-3">Outdoor covered space surrounded by manicured gardens, ideal for cocktail receptions and outdoor ceremonies.</p>
+                <p className="mb-3">Outdoor covered space surrounded by manicured gardens, ideal for cocktail receptions and outdoor ceremonies. <Link to="/outdoor-gardens" className="text-luxury-blue hover:text-luxury-gold underline font-medium">Discover our stunning outdoor gardens</Link>.</p>
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <strong>Setting:</strong> Outdoor covered pavilion
@@ -295,6 +296,12 @@ const LuxuryEventGuideWorking = () => {
             <li><strong>Professional Kitchen:</strong> State-of-the-art culinary facilities with master chef team</li>
             <li><strong>Event Coordination Center:</strong> Dedicated space for planning and coordination meetings</li>
           </ul>
+
+          <HighlightBox icon="✨" title="Discover More">
+            <p className="mb-2">
+              Explore our comprehensive <Link to="/luxury-venue-amenities-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">5-Star Luxury Amenities Guide</Link> to understand every premium feature and service that sets The Opera House apart from other venues in Noida.
+            </p>
+          </HighlightBox>
         </BlogSection>
 
         <BlogSection id="planning-guide" title="Planning Your Luxury Event">
@@ -308,7 +315,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <Badge variant="outline" className="bg-luxury-blue text-white border-luxury-blue">12 Months</Badge>
+                  <Badge variant="outline" className="bg-luxury-gold text-white border-luxury-gold">12 Months</Badge>
                   <h4 className="font-semibold">Venue Selection & Booking</h4>
                 </div>
                 <p className="text-sm">Venue tours, contract negotiation, initial deposits, and date confirmation.</p>
@@ -318,7 +325,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <Badge variant="outline" className="bg-luxury-blue text-white border-luxury-blue">9-10 Months</Badge>
+                  <Badge variant="outline" className="bg-luxury-gold text-white border-luxury-gold">9-10 Months</Badge>
                   <h4 className="font-semibold">Core Team Assembly</h4>
                 </div>
                 <p className="text-sm">Event planner, catering, photography, decoration, and entertainment bookings.</p>
@@ -328,7 +335,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <Badge variant="outline" className="bg-luxury-blue text-white border-luxury-blue">6-8 Months</Badge>
+                  <Badge variant="outline" className="bg-luxury-gold text-white border-luxury-gold">6-8 Months</Badge>
                   <h4 className="font-semibold">Design & Theme Development</h4>
                 </div>
                 <p className="text-sm">Color schemes, decoration concepts, floral arrangements, and lighting plans.</p>
@@ -338,7 +345,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <Badge variant="outline" className="bg-luxury-blue text-white border-luxury-blue">3-4 Months</Badge>
+                  <Badge variant="outline" className="bg-luxury-gold text-white border-luxury-gold">3-4 Months</Badge>
                   <h4 className="font-semibold">Menu Finalization</h4>
                 </div>
                 <p className="text-sm">Tastings, dietary requirements, service style, and beverage selection.</p>
@@ -348,13 +355,19 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="flex items-center gap-3 mb-2">
-                  <Badge variant="outline" className="bg-luxury-blue text-white border-luxury-blue">1-2 Months</Badge>
+                  <Badge variant="outline" className="bg-luxury-gold text-white border-luxury-gold">1-2 Months</Badge>
                   <h4 className="font-semibold">Final Confirmations</h4>
                 </div>
                 <p className="text-sm">Guest count finalization, seating arrangements, and final vendor confirmations.</p>
               </CardContent>
             </Card>
           </div>
+
+          <HighlightBox icon="📅" title="Complete Planning Guide">
+            <p className="mb-2">
+              For detailed month-by-month guidance, explore our comprehensive <Link to="/luxury-wedding-planning-timeline-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">12-Month Luxury Wedding Planning Timeline</Link> that covers every aspect of planning your perfect celebration.
+            </p>
+          </HighlightBox>
 
           <h3 className="text-xl font-semibold text-luxury-text mt-8 mb-4">Vendor Coordination Excellence</h3>
           <p className="mb-4">
@@ -382,7 +395,7 @@ const LuxuryEventGuideWorking = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3 flex items-center gap-2">
                   🌱 Sustainable Luxury
@@ -397,12 +410,12 @@ const LuxuryEventGuideWorking = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3 flex items-center gap-2">
                   🎮 Immersive Technology
                 </h4>
-                <p className="text-sm mb-3">Cutting-edge technology creating unforgettable interactive experiences.</p>
+                <p className="text-sm mb-3">Cutting-edge technology creating unforgettable interactive experiences. <Link to="/smart-venue-technology-features-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">Learn about our smart venue technology</Link>.</p>
                 <ul className="text-sm list-disc list-inside space-y-1">
                   <li>Augmented reality photo booths</li>
                   <li>Holographic entertainment</li>
@@ -412,7 +425,7 @@ const LuxuryEventGuideWorking = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3 flex items-center gap-2">
                   🎨 Hyper-Personalization
@@ -427,7 +440,7 @@ const LuxuryEventGuideWorking = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-luxury-blue/30">
+            <Card className="border-luxury-gold/20">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3 flex items-center gap-2">
                   🌍 Multi-Cultural Integration
@@ -447,12 +460,15 @@ const LuxuryEventGuideWorking = () => {
             <p className="mb-4">
               The Opera House stays ahead of trends by continuously investing in new technologies, sustainable practices, and innovative service offerings. Our venue features:
             </p>
-            <ul className="list-disc list-inside space-y-2">
+            <ul className="list-disc list-inside space-y-2 mb-4">
               <li>Smart building technology with app-controlled environment</li>
               <li>Sustainable operations including solar power and waste reduction</li>
               <li>Flexible spaces that adapt to emerging event formats</li>
               <li>Partnerships with trend-setting vendors and technology providers</li>
             </ul>
+            <p className="text-sm border-t border-luxury-gold/20 pt-4">
+              Discover how technology enhances your event experience with our detailed <Link to="/smart-venue-technology-features-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">Smart Technology Integration Guide</Link> covering all our innovative features and capabilities.
+            </p>
           </HighlightBox>
         </BlogSection>
 
@@ -479,7 +495,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3">Q: What are the parking facilities like?</h4>
-                <p className="text-sm"><strong>A:</strong> We offer extensive parking for 500+ vehicles, including VIP valet service, covered parking areas, and dedicated spaces for elderly guests and differently-abled visitors. Our location in Sector 120 also provides excellent road connectivity.</p>
+                <p className="text-sm"><strong>A:</strong> We offer extensive parking for 500+ vehicles, including VIP valet service, covered parking areas, and dedicated spaces for elderly guests and differently-abled visitors. Our location in Sector 73 also provides excellent road connectivity.</p>
               </CardContent>
             </Card>
 
@@ -507,7 +523,7 @@ const LuxuryEventGuideWorking = () => {
             <Card>
               <CardContent className="p-6">
                 <h4 className="font-semibold text-luxury-blue mb-3">Q: What makes The Opera House different from other luxury venues?</h4>
-                <p className="text-sm"><strong>A:</strong> Our unique theatrical architecture, location in premium Sector 120, combination of indoor-outdoor spaces, cultural celebration expertise, and commitment to personalized service create an unmatched luxury event experience in Noida.</p>
+                <p className="text-sm"><strong>A:</strong> Our unique theatrical architecture, location in premium Sector 73, combination of indoor-outdoor spaces, cultural celebration expertise, and commitment to personalized service create an unmatched luxury event experience in Noida.</p>
               </CardContent>
             </Card>
           </div>

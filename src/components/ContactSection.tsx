@@ -132,10 +132,10 @@ const ContactSection = () => {
                       Location
                     </h4>
                     <p className="text-luxury-text font-light">
-                      Bhule ram Palace, near Prateek Laurel, Sarfabad Village,
-                      Sarfabad, Sector 73, Noida, Uttar Pradesh 201301
-                      <br />
-                      Noida, India
+                      The Opera House Banquet<br />
+                      Near Prateek Laurel<br />
+                      Sector-73<br />
+                      Noida-201307
                     </p>
                   </div>
                 </div>

@@ -32,10 +32,10 @@ const BanquetHallNearMe = () => {
           "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Sector 63, H1A/25",
+            "streetAddress": "The Opera House Banquet, Near Prateek Laurel, Sector-73",
             "addressLocality": "Noida",
             "addressRegion": "Uttar Pradesh",
-            "postalCode": "201301",
+            "postalCode": "201307",
             "addressCountry": "IN"
           },
           "geo": {
@@ -64,27 +64,27 @@ const BanquetHallNearMe = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-r from-blue-50 to-luxury-cream/20">
+        <section className="relative py-20 bg-gradient-to-r from-luxury-gold/10 to-luxury-cream/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-4 bg-blue-600 text-white">
+              <Badge className="mb-4 bg-luxury-gold text-white">
                 <MapPin className="w-4 h-4 mr-1" />
                 Conveniently Located
               </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold text-luxury-dark mb-6">
-                Best <span className="text-luxury-gold">Banquet Hall</span>
+              <h1 className="text-4xl md:text-6xl font-bold text-luxury-text mb-6">
+                Best <span className="text-luxury-blue">Banquet Hall</span>
                 <br />Near You
               </h1>
-              <p className="text-xl text-luxury-dark/80 mb-8 leading-relaxed">
+              <p className="text-xl text-luxury-text-muted mb-8 leading-relaxed">
                 Searching for the perfect banquet hall near you? Look no further! The Opera House in Noida
                 offers easy accessibility from Delhi NCR with world-class facilities and premium services.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold/90">
+                <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold-dark">
                   <NavigationIcon className="w-4 h-4 mr-2" />
                   Get Directions
                 </Button>
-                <Button size="lg" variant="outline" className="border-luxury-gold text-luxury-gold">
+                <Button size="lg" variant="outline" className="border-luxury-blue text-luxury-blue">
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
                 </Button>
@@ -97,59 +97,59 @@ const BanquetHallNearMe = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-luxury-dark mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-luxury-text mb-4">
                 Why Choose The Opera House Near You?
               </h2>
-              <p className="text-lg text-luxury-dark/70 max-w-2xl mx-auto">
+              <p className="text-lg text-luxury-text-muted max-w-2xl mx-auto">
                 Strategically located in Noida with excellent connectivity, making it the most accessible
                 premium banquet hall for guests from across Delhi NCR.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="border-blue-200 hover:shadow-lg transition-shadow">
+              <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-                  <CardTitle className="text-lg">Prime Location</CardTitle>
+                  <MapPin className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
+                  <CardTitle className="text-lg text-luxury-blue">Prime Location</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Located in Noida Sector 63, easily accessible from Delhi, Ghaziabad, Greater Noida, and all NCR areas.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 hover:shadow-lg transition-shadow">
+              <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <NavigationIcon className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-                  <CardTitle className="text-lg">Easy Navigation</CardTitle>
+                  <NavigationIcon className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
+                  <CardTitle className="text-lg text-luxury-blue">Easy Navigation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     GPS-friendly location with clear landmarks and signage. Available on Google Maps and all navigation apps.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 hover:shadow-lg transition-shadow">
+              <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Clock className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-                  <CardTitle className="text-lg">Quick Reach</CardTitle>
+                  <Clock className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
+                  <CardTitle className="text-lg text-luxury-blue">Quick Reach</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Just 30 minutes from Delhi, 15 minutes from Ghaziabad, and 20 minutes from Greater Noida.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 hover:shadow-lg transition-shadow">
+              <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Star className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-                  <CardTitle className="text-lg">5-Star Ratings</CardTitle>
+                  <Star className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
+                  <CardTitle className="text-lg text-luxury-blue">5-Star Ratings</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Consistently rated as the best banquet hall near Delhi NCR with 4.9/5 star reviews.
                   </p>
                 </CardContent>
@@ -162,10 +162,10 @@ const BanquetHallNearMe = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-luxury-dark mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-luxury-text mb-4">
                 Distance from Major Areas
               </h2>
-              <p className="text-lg text-luxury-dark/70">
+              <p className="text-lg text-luxury-text-muted">
                 Check how close we are to your location
               </p>
             </div>
@@ -175,12 +175,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">Delhi (Connaught Place)</h3>
-                      <p className="text-blue-600 font-medium">25-30 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">Delhi (Connaught Place)</h3>
+                      <p className="text-luxury-gold font-medium">25-30 minutes</p>
                       <p className="text-sm text-gray-600">via DND Flyway</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -190,12 +190,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">Ghaziabad</h3>
-                      <p className="text-blue-600 font-medium">15-20 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">Ghaziabad</h3>
+                      <p className="text-luxury-gold font-medium">15-20 minutes</p>
                       <p className="text-sm text-gray-600">via NH-24</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -205,12 +205,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">Greater Noida</h3>
-                      <p className="text-blue-600 font-medium">20-25 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">Greater Noida</h3>
+                      <p className="text-luxury-gold font-medium">20-25 minutes</p>
                       <p className="text-sm text-gray-600">via Noida Expressway</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -220,12 +220,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">Faridabad</h3>
-                      <p className="text-blue-600 font-medium">35-40 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">Faridabad</h3>
+                      <p className="text-luxury-gold font-medium">35-40 minutes</p>
                       <p className="text-sm text-gray-600">via Yamuna Expressway</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -235,12 +235,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">Gurgaon</h3>
-                      <p className="text-blue-600 font-medium">45-50 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">Gurgaon</h3>
+                      <p className="text-luxury-gold font-medium">45-50 minutes</p>
                       <p className="text-sm text-gray-600">via DND & Ring Road</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -250,12 +250,12 @@ const BanquetHallNearMe = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="font-semibold text-lg text-luxury-dark">IGI Airport</h3>
-                      <p className="text-blue-600 font-medium">45 minutes</p>
+                      <h3 className="font-semibold text-lg text-luxury-text">IGI Airport</h3>
+                      <p className="text-luxury-gold font-medium">45 minutes</p>
                       <p className="text-sm text-gray-600">via DND Flyway</p>
                     </div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-luxury-gold/10 rounded-full flex items-center justify-center">
+                      <MapPin className="w-6 h-6 text-luxury-gold" />
                     </div>
                   </div>
                 </CardContent>
@@ -268,10 +268,10 @@ const BanquetHallNearMe = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-luxury-dark mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-luxury-text mb-4">
                 Multiple Ways to Reach Us
               </h2>
-              <p className="text-lg text-luxury-dark/70">
+              <p className="text-lg text-luxury-text-muted">
                 Choose the most convenient transportation option for your guests
               </p>
             </div>
@@ -282,7 +282,7 @@ const BanquetHallNearMe = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <NavigationIcon className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">By Car</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">By Car</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
@@ -309,7 +309,7 @@ const BanquetHallNearMe = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">By Metro</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">By Metro</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
@@ -336,7 +336,7 @@ const BanquetHallNearMe = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Phone className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Transportation Help</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Transportation Help</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-2">
@@ -362,14 +362,14 @@ const BanquetHallNearMe = () => {
         </section>
 
         {/* Local SEO Content */}
-        <section className="py-16 bg-luxury-cream/10">
+        <section className="py-16 bg-gradient-to-br from-luxury-gold/10 to-luxury-cream/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-luxury-dark mb-6">
+              <h2 className="text-3xl font-bold text-luxury-text mb-6">
                 The Best Banquet Hall Near You - The Opera House Noida
               </h2>
 
-              <div className="prose prose-lg max-w-none text-luxury-dark/80">
+              <div className="prose prose-lg max-w-none text-luxury-text-muted">
                 <p className="mb-6">
                   When searching for a <strong>banquet hall near me</strong>, location convenience is just as important as quality and service.
                   The Opera House in Noida perfectly combines accessibility with luxury, making it the top choice for events across Delhi NCR.
@@ -377,7 +377,7 @@ const BanquetHallNearMe = () => {
                   in NCR, reaching our venue is quick and hassle-free.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Why Location Matters for Your Event
                 </h3>
 
@@ -395,7 +395,7 @@ const BanquetHallNearMe = () => {
                   <li>Proximity to major hotels for out-of-town guests</li>
                 </ul>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Accessibility from Major NCR Areas
                 </h3>
 
@@ -415,7 +415,7 @@ const BanquetHallNearMe = () => {
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Complete Event Solutions at Your Doorstep
                 </h3>
 
@@ -431,7 +431,7 @@ const BanquetHallNearMe = () => {
                   experience that's easily accessible to all your guests, regardless of where they're traveling from in the NCR region.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Book Your Event at the Most Convenient Venue
                 </h3>
 
@@ -442,18 +442,18 @@ const BanquetHallNearMe = () => {
                 </p>
               </div>
 
-              <div className="mt-12 bg-blue-50 p-8 rounded-lg">
+              <div className="mt-12 bg-luxury-cream/30 p-8 rounded-lg">
                 <div className="text-center">
-                  <h4 className="text-xl font-semibold text-luxury-dark mb-4">Need Directions or Have Questions?</h4>
-                  <p className="text-luxury-dark/70 mb-6">
+                  <h4 className="text-xl font-semibold text-luxury-text mb-4">Need Directions or Have Questions?</h4>
+                  <p className="text-luxury-text-muted mb-6">
                     Our team is available 24/7 to help you reach our venue or answer any questions about our location and accessibility.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button className="bg-luxury-gold text-luxury-dark hover:bg-luxury-gold/90">
+                    <Button className="bg-luxury-gold hover:bg-luxury-gold-dark">
                       <NavigationIcon className="w-4 h-4 mr-2" />
                       Get Live Directions
                     </Button>
-                    <Button variant="outline" className="border-luxury-gold text-luxury-gold">
+                    <Button variant="outline" className="border-luxury-blue text-luxury-blue">
                       <Phone className="w-4 h-4 mr-2" />
                       Call for Assistance
                     </Button>

@@ -32,10 +32,10 @@ const LuxuryBanquetHallNoida = () => {
           "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Sector 63, H1A/25",
+            "streetAddress": "The Opera House Banquet, Near Prateek Laurel, Sector-73",
             "addressLocality": "Noida",
             "addressRegion": "Uttar Pradesh",
-            "postalCode": "201301",
+            "postalCode": "201307",
             "addressCountry": "IN"
           },
           "priceRange": "₹₹₹₹",
@@ -60,26 +60,26 @@ const LuxuryBanquetHallNoida = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="relative py-24 bg-gradient-to-r from-luxury-dark to-luxury-gold/20">
+        <section className="relative py-24 bg-gradient-to-r from-luxury-gold/10 to-luxury-cream/20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center text-white">
-              <Badge className="mb-4 bg-luxury-gold text-luxury-dark font-semibold">
+            <div className="max-w-4xl mx-auto text-center">
+              <Badge className="mb-4 bg-luxury-gold text-white font-semibold">
                 <Crown className="w-4 h-4 mr-1" />
                 Premium Luxury Venue
               </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Noida's Most <span className="text-luxury-gold">Luxurious</span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-luxury-text">
+                Noida's Most <span className="text-luxury-blue">Luxurious</span>
                 <br />Banquet Hall
               </h1>
-              <p className="text-xl mb-8 leading-relaxed opacity-90">
+              <p className="text-xl mb-8 leading-relaxed text-luxury-text-muted">
                 Experience unparalleled elegance at The Opera House - where luxury meets perfection.
                 Elite venue for distinguished guests who demand the finest in event hosting.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-luxury-gold text-luxury-dark hover:bg-luxury-gold/90 font-semibold">
+                <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold-dark font-semibold">
                   Schedule VIP Tour
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-luxury-dark">
+                <Button size="lg" variant="outline" className="border-luxury-blue text-luxury-blue">
                   View Luxury Packages
                 </Button>
               </div>
@@ -106,7 +106,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <Crown className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Royal Interiors</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Royal Interiors</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -121,7 +121,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <Star className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Five-Star Service</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Five-Star Service</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -136,7 +136,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <Award className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Award-Winning Cuisine</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Award-Winning Cuisine</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -151,7 +151,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <CheckCircle className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Premium Amenities</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Premium Amenities</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -166,7 +166,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <MapPin className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">Prime Location</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">Prime Location</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -181,7 +181,7 @@ const LuxuryBanquetHallNoida = () => {
                   <div className="w-16 h-16 bg-luxury-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-luxury-gold/20 transition-colors">
                     <Phone className="w-8 h-8 text-luxury-gold" />
                   </div>
-                  <CardTitle className="text-xl">24/7 Concierge</CardTitle>
+                  <CardTitle className="text-xl text-luxury-blue">24/7 Concierge</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-luxury-dark/70 text-center">
@@ -202,7 +202,7 @@ const LuxuryBanquetHallNoida = () => {
                 Exclusive Luxury Packages
               </h2>
               <p className="text-lg text-luxury-dark/70 max-w-2xl mx-auto">
-                Bespoke packages designed for the most discerning clients who expect nothing but perfection.
+                Bespoke packages designed for the most discerning clients who expect nothing but perfection. For detailed planning assistance, explore our <a href="/luxury-wedding-planning-timeline-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">comprehensive 12-month planning guide</a>.
               </p>
             </div>
 

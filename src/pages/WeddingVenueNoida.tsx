@@ -32,10 +32,10 @@ const WeddingVenueNoida = () => {
           "telephone": "+91 9911620620",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Sector 63, H1A/25",
+            "streetAddress": "The Opera House Banquet, Near Prateek Laurel, Sector-73",
             "addressLocality": "Noida",
             "addressRegion": "Uttar Pradesh",
-            "postalCode": "201301",
+            "postalCode": "201307",
             "addressCountry": "IN"
           },
           "maximumAttendeeCapacity": 500,
@@ -65,10 +65,10 @@ const WeddingVenueNoida = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-4 bg-luxury-gold text-white">Premium Wedding Venue</Badge>
-              <h1 className="text-4xl md:text-6xl font-bold text-luxury-dark mb-6">
-                Dream Wedding Venue in <span className="text-luxury-gold">Noida</span>
+              <h1 className="text-4xl md:text-6xl font-bold text-luxury-text mb-6">
+                Dream Wedding Venue in <span className="text-luxury-blue">Noida</span>
               </h1>
-              <p className="text-xl text-luxury-dark/80 mb-8 leading-relaxed">
+              <p className="text-xl text-luxury-text-muted mb-8 leading-relaxed">
                 Create magical memories at The Opera House - Noida's most sought-after luxury marriage hall.
                 Perfect for intimate ceremonies to grand celebrations with 500+ guest capacity.
               </p>
@@ -76,7 +76,7 @@ const WeddingVenueNoida = () => {
                 <Button size="lg" className="bg-luxury-gold hover:bg-luxury-gold/90">
                   Book Venue Tour
                 </Button>
-                <Button size="lg" variant="outline" className="border-luxury-gold text-luxury-gold">
+                <Button size="lg" variant="outline" className="border-luxury-blue text-luxury-blue">
                   View Wedding Packages
                 </Button>
               </div>
@@ -88,10 +88,10 @@ const WeddingVenueNoida = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-luxury-dark mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-luxury-text mb-4">
                 Why Couples Choose The Opera House for Their Wedding
               </h2>
-              <p className="text-lg text-luxury-dark/70 max-w-2xl mx-auto">
+              <p className="text-lg text-luxury-text-muted max-w-2xl mx-auto">
                 From intimate ceremonies to grand receptions, we make every wedding moment unforgettable in Noida's most elegant venue.
               </p>
             </div>
@@ -100,10 +100,10 @@ const WeddingVenueNoida = () => {
               <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
                   <Heart className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
-                  <CardTitle className="text-lg">Romantic Ambiance</CardTitle>
+                  <CardTitle className="text-lg text-luxury-blue">Romantic Ambiance</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Elegant décor and lighting create the perfect romantic atmosphere for your special day.
                   </p>
                 </CardContent>
@@ -111,11 +111,11 @@ const WeddingVenueNoida = () => {
 
               <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
-                  <Users className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
-                  <CardTitle className="text-lg">500+ Guest Capacity</CardTitle>
+                  <Users className="w-12 h-12 text-luxury-blue mx-auto mb-2" />
+                  <CardTitle className="text-lg text-luxury-blue">500+ Guest Capacity</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Spacious marriage hall accommodating both intimate gatherings and grand celebrations.
                   </p>
                 </CardContent>
@@ -124,10 +124,10 @@ const WeddingVenueNoida = () => {
               <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
                   <Sparkles className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
-                  <CardTitle className="text-lg">Bridal Suite</CardTitle>
+                  <CardTitle className="text-lg text-luxury-blue">Bridal Suite</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Luxurious bridal suite for getting ready with professional makeup area and full-length mirrors.
                   </p>
                 </CardContent>
@@ -136,10 +136,10 @@ const WeddingVenueNoida = () => {
               <Card className="border-luxury-gold/20 hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center">
                   <Camera className="w-12 h-12 text-luxury-gold mx-auto mb-2" />
-                  <CardTitle className="text-lg">Photography Ready</CardTitle>
+                  <CardTitle className="text-lg text-luxury-blue">Photography Ready</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-luxury-dark/70 text-center">
+                  <p className="text-sm text-luxury-text-muted text-center">
                     Instagram-worthy interiors and lighting perfect for wedding photography and videography.
                   </p>
                 </CardContent>
@@ -152,16 +152,16 @@ const WeddingVenueNoida = () => {
         <section className="py-16 bg-luxury-cream/10">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-luxury-dark mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-luxury-text mb-4">
                 Complete Wedding Packages in Noida
               </h2>
-              <p className="text-lg text-luxury-dark/70 max-w-2xl mx-auto">
-                All-inclusive wedding packages designed to make your planning stress-free and your day perfect.
+              <p className="text-lg text-luxury-text-muted max-w-2xl mx-auto">
+                All-inclusive wedding packages designed to make your planning stress-free and your day perfect. For detailed planning guidance, check our <a href="/luxury-wedding-planning-timeline-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">12-month wedding planning timeline</a>.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-luxury-gold/20 hover:shadow-xl transition-shadow">
+              <Card className="border-luxury-blue/20 hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <Badge className="w-fit mb-2">Intimate Wedding</Badge>
                   <CardTitle className="text-xl">Royal Celebration</CardTitle>
@@ -170,64 +170,64 @@ const WeddingVenueNoida = () => {
                 <CardContent className="space-y-4">
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <Utensils className="w-4 h-4 text-luxury-gold" />
+                      <Utensils className="w-4 h-4 text-luxury-blue" />
                       Multi-cuisine catering for all guests
                     </li>
                     <li className="flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-luxury-gold" />
+                      <Sparkles className="w-4 h-4 text-luxury-blue" />
                       Basic stage decoration & lighting
                     </li>
                     <li className="flex items-center gap-2">
-                      <Music className="w-4 h-4 text-luxury-gold" />
+                      <Music className="w-4 h-4 text-luxury-blue" />
                       DJ services & sound system
                     </li>
                     <li className="flex items-center gap-2">
-                      <Car className="w-4 h-4 text-luxury-gold" />
+                      <Car className="w-4 h-4 text-luxury-blue" />
                       Complimentary valet parking
                     </li>
                   </ul>
-                  <Button className="w-full bg-luxury-gold hover:bg-luxury-gold/90">
+                  <Button className="w-full bg-luxury-blue hover:bg-luxury-blue/90">
                     Get Quote
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-luxury-gold/20 hover:shadow-xl transition-shadow border-2 border-luxury-gold">
+              <Card className="border-luxury-blue/20 hover:shadow-xl transition-shadow border-2 border-luxury-blue">
                 <CardHeader>
-                  <Badge className="w-fit mb-2 bg-luxury-gold">Most Popular</Badge>
+                  <Badge className="w-fit mb-2 bg-luxury-blue">Most Popular</Badge>
                   <CardTitle className="text-xl">Grand Wedding</CardTitle>
                   <CardDescription>Perfect for 200-350 guests</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <Utensils className="w-4 h-4 text-luxury-gold" />
+                      <Utensils className="w-4 h-4 text-luxury-blue" />
                       Premium catering with live counters
                     </li>
                     <li className="flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-luxury-gold" />
+                      <Sparkles className="w-4 h-4 text-luxury-blue" />
                       Premium decoration & floral arrangements
                     </li>
                     <li className="flex items-center gap-2">
-                      <Music className="w-4 h-4 text-luxury-gold" />
+                      <Music className="w-4 h-4 text-luxury-blue" />
                       Live band + DJ services
                     </li>
                     <li className="flex items-center gap-2">
-                      <Heart className="w-4 h-4 text-luxury-gold" />
+                      <Heart className="w-4 h-4 text-luxury-blue" />
                       Bridal suite access & makeup room
                     </li>
                     <li className="flex items-center gap-2">
-                      <Camera className="w-4 h-4 text-luxury-gold" />
+                      <Camera className="w-4 h-4 text-luxury-blue" />
                       Professional photography session
                     </li>
                   </ul>
-                  <Button className="w-full bg-luxury-gold hover:bg-luxury-gold/90">
+                  <Button className="w-full bg-luxury-blue hover:bg-luxury-blue/90">
                     Get Quote
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="border-luxury-gold/20 hover:shadow-xl transition-shadow">
+              <Card className="border-luxury-blue/20 hover:shadow-xl transition-shadow">
                 <CardHeader>
                   <Badge className="w-fit mb-2">Luxury Wedding</Badge>
                   <CardTitle className="text-xl">Maharaja Package</CardTitle>
@@ -236,27 +236,27 @@ const WeddingVenueNoida = () => {
                 <CardContent className="space-y-4">
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
-                      <Utensils className="w-4 h-4 text-luxury-gold" />
+                      <Utensils className="w-4 h-4 text-luxury-blue" />
                       Luxury buffet with international cuisine
                     </li>
                     <li className="flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-luxury-gold" />
+                      <Sparkles className="w-4 h-4 text-luxury-blue" />
                       Designer decoration & themed setup
                     </li>
                     <li className="flex items-center gap-2">
-                      <Music className="w-4 h-4 text-luxury-gold" />
+                      <Music className="w-4 h-4 text-luxury-blue" />
                       Celebrity DJ + live entertainment
                     </li>
                     <li className="flex items-center gap-2">
-                      <Shield className="w-4 h-4 text-luxury-gold" />
+                      <Shield className="w-4 h-4 text-luxury-blue" />
                       Dedicated wedding coordinator
                     </li>
                     <li className="flex items-center gap-2">
-                      <Car className="w-4 h-4 text-luxury-gold" />
+                      <Car className="w-4 h-4 text-luxury-blue" />
                       Luxury car decoration included
                     </li>
                   </ul>
-                  <Button className="w-full bg-luxury-gold hover:bg-luxury-gold/90">
+                  <Button className="w-full bg-luxury-blue hover:bg-luxury-blue/90">
                     Get Quote
                   </Button>
                 </CardContent>
@@ -269,24 +269,24 @@ const WeddingVenueNoida = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-luxury-dark mb-6">
+              <h2 className="text-3xl font-bold text-luxury-text mb-6">
                 Premier Wedding Venue in Noida - The Opera House
               </h2>
 
-              <div className="prose prose-lg max-w-none text-luxury-dark/80">
+              <div className="prose prose-lg max-w-none text-luxury-text-muted">
                 <p className="mb-6">
                   Looking for the perfect <strong>wedding venue in Noida</strong>? The Opera House stands as the premier choice for couples seeking a
                   <strong> luxury marriage hall in Noida</strong> that combines elegance, sophistication, and exceptional service. Located in the heart
                   of Sector 63, our venue has been the backdrop for over 500 successful weddings, making us the <strong>best wedding venue in Noida</strong>.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Why Choose Our Marriage Hall in Noida?
                 </h3>
 
                 <p className="mb-4">
                   Our <strong>banquet hall in Noida</strong> offers unmatched amenities for your special day. With a capacity to host 500+ guests,
-                  we provide the perfect setting for both intimate ceremonies and grand celebrations. Our venue features:
+                  we provide the perfect setting for both intimate ceremonies and grand celebrations. Explore our <a href="/grand-ballroom" className="text-luxury-blue hover:text-luxury-gold underline font-medium">magnificent Grand Ballroom</a> or our beautiful <a href="/outdoor-gardens" className="text-luxury-blue hover:text-luxury-gold underline font-medium">outdoor garden spaces</a>. Our venue features:
                 </p>
 
                 <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -299,14 +299,14 @@ const WeddingVenueNoida = () => {
                   <li>Professional event coordination team</li>
                 </ul>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Complete Wedding Services in Noida
                 </h3>
 
                 <p className="mb-4">
                   As the <strong>top wedding venue in Noida</strong>, we offer comprehensive wedding packages that include everything you need for
                   your perfect day. Our experienced team handles decoration, catering, entertainment, and coordination, ensuring a stress-free
-                  experience for couples and their families.
+                  experience for couples and their families. Learn more about our <a href="/luxury-venue-amenities-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">luxury venue amenities</a> and <a href="/luxury-event-guide-noida" className="text-luxury-blue hover:text-luxury-gold underline font-medium">comprehensive event planning guide</a>.
                 </p>
 
                 <p className="mb-6">
@@ -314,7 +314,7 @@ const WeddingVenueNoida = () => {
                   With metro connectivity and major highways nearby, your guests can easily reach our <strong>luxury banquet hall in Noida</strong>.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-luxury-dark mt-8 mb-4">
+                <h3 className="text-2xl font-semibold text-luxury-text mt-8 mb-4">
                   Book Your Dream Wedding Venue Today
                 </h3>
 
