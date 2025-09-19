@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BlogLayout from "@/components/blog/BlogLayout";
-import { BlogHeader } from "@/components/blog/BlogHeader";
-import { BlogSection } from "@/components/blog/BlogSection";
-import { TableOfContents } from "@/components/blog/TableOfContents";
-import { HighlightBox } from "@/components/blog/HighlightBox";
+import BlogHeader from "@/components/blog/BlogHeader";
+import BlogSection from "@/components/blog/BlogSection";
+import TableOfContents from "@/components/blog/TableOfContents";
+import HighlightBox from "@/components/blog/HighlightBox";
 import { Phone, Building2, Sun, Camera, Zap, Users, Accessibility, Recycle } from "lucide-react";
 
 const GlassHouseElegance = () => {
