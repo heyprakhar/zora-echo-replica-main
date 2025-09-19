@@ -1,0 +1,40 @@
+{
+  "name": "The Opera House - Luxury Event Venue & Convention Center",
+  "short_name": "Opera House",
+  "description": "A masterpiece reserved for the distinguished. Experience luxury events at The Opera House - Delhi's premier convention center.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fefee3",
+  "theme_color": "#deb887",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle", "business"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

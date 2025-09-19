@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://theoperahouse.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://theoperahouse.com/images/luxury-banquet-hall-noida.jpg</image:loc>
+      <image:title>The Opera House - Best Luxury Banquet Hall in Noida</image:title>
+    </image:image>
+  </url>
+
+  <!-- Wedding Venue Page -->
+  <url>
+    <loc>https://theoperahouse.com/wedding-venue-noida</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theoperahouse.com/images/wedding-venue-noida.jpg</image:loc>
+      <image:title>Wedding Venue in Noida - The Opera House</image:title>
+    </image:image>
+  </url>
+
+  <!-- Luxury Banquet Hall Page -->
+  <url>
+    <loc>https://theoperahouse.com/luxury-banquet-hall-noida</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theoperahouse.com/images/luxury-banquet-hall-interior.jpg</image:loc>
+      <image:title>Luxury Banquet Hall in Noida - The Opera House</image:title>
+    </image:image>
+  </url>
+
+  <!-- Banquet Hall Near Me Page -->
+  <url>
+    <loc>https://theoperahouse.com/banquet-hall-near-me</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theoperahouse.com/images/banquet-hall-location.jpg</image:loc>
+      <image:title>Banquet Hall Near Me - The Opera House Noida</image:title>
+    </image:image>
+  </url>
+
+  <!-- Section Pages -->
+  <url>
+    <loc>https://theoperahouse.com/#about</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://theoperahouse.com/#spaces</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://theoperahouse.com/#gallery</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://theoperahouse.com/#features</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://theoperahouse.com/#contact</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
