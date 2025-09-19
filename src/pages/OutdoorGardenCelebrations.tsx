@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BlogLayout } from "@/components/blog/BlogLayout";
+import BlogLayout from "@/components/blog/BlogLayout";
 import { BlogHeader } from "@/components/blog/BlogHeader";
 import { BlogSection } from "@/components/blog/BlogSection";
 import { TableOfContents } from "@/components/blog/TableOfContents";
