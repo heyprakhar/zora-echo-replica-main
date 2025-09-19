@@ -53,3 +53,12 @@ pids
 # Temporary folders
 tmp/
 temp/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Embedded git repository
+zora-echo-replica-main/

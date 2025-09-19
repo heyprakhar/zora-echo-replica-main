@@ -1,7 +1,7 @@
 {
-  "name": "zora-echo-replica",
+  "name": "website_the_opera_house",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -21,6 +21,10 @@
     "validate": "npm run build && npm run validate-html",
     "critical-css": "critical --src dist/index.html --dest dist/index-critical.html --width 1300 --height 900 --minify"
   },
+  "keywords": ["opera house", "banquet hall", "wedding venue", "events"],
+  "author": "",
+  "license": "ISC",
+  "description": "The Opera House - Premium Banquet Hall and Event Venue",
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.1",
@@ -91,7 +95,8 @@
   },
   "devDependencies": {
     "@axe-core/cli": "^4.10.2",
-    "@types/node": "^22.8.6",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/uuid": "^10.0.0",
