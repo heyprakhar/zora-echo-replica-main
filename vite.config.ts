@@ -4,7 +4,33 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: 'move-script-to-body',
+      transformIndexHtml: {
+        enforce: 'post',
+        transform(html) {
+          // Move all module script tags from head to body
+          const scriptRegex = /<script[^>]*type="module"[^>]*>[\s\S]*?<\/script>|<script[^>]*type="module"[^>]*\/>/g;
+          const headScripts: string[] = [];
+
+          // Extract script tags from head
+          html = html.replace(scriptRegex, (match) => {
+            headScripts.push(match);
+            return '';
+          });
+
+          // Add scripts to body before closing tag
+          if (headScripts.length > 0) {
+            html = html.replace('</body>', `  ${headScripts.join('\n  ')}\n</body>`);
+          }
+
+          return html;
+        }
+      }
+    }
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
